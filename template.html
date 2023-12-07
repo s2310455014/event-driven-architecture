@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact Form</title>
-</head>
-<body>
-
-    <div class="container">
-        <form action="#" method="post" id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Absenden</button>
-        </form>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container todo-input">
+        <input type="text" placeholder="Add a new task" />
+        <div class="todo-input-category">
+          <select name="category" id="category">
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="personal">Personal</option>
+          </select>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="todo-lists">
+        <div class="todo-lists-categories">
+          <div class="container todo-list work">
+            <h2>Work</h2>
+            <div class="todo-list-items">
+              <input class="checkbox" type="checkbox" id="done" />
+              <label for="done">bake cake</label>
+            </div>
+          </div>
+          <div class="container todo-list school">
+            <h2>School</h2>
+            <div class="todo-list-items">
+              <input class="checkbox" type="checkbox" id="done" />
+              <label for="done"
+                >implement prototypical architectural pattern</label
+              >
+            </div>
+            <div class="todo-list-items">
+              <input class="checkbox" type="checkbox" id="done" />
+              <label for="done">drink punsch afterwards</label>
+            </div>
+          </div>
+          <div class="container todo-list personal">
+            <h2>Personal</h2>
+            <div class="todo-list-items">
+              <input class="checkbox" type="checkbox" id="done" />
+              <label for="done">go to öh punschstandl</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container done">
+        <h2>Done</h2>
+        <div class="todo-list-items">
+          <input class="checkbox" type="checkbox" id="done" checked />
+          <label for="done">buy cake stuff</label>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
