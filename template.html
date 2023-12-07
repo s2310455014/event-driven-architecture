@@ -9,14 +9,14 @@
   <body>
     <div class="main">
       <div class="container todo-input">
-        <input type="text" placeholder="Add a new task" />
+        <input type="text" id="taskInput" placeholder="Add a new task" />
         <div class="todo-input-category">
           <select name="category" id="category">
             <option value="work">Work</option>
             <option value="school">School</option>
             <option value="personal">Personal</option>
           </select>
-          <button>Add</button>
+          <button onclick="addTask()">Add</button>
         </div>
       </div>
       <div class="todo-lists">
@@ -24,28 +24,28 @@
           <div class="container todo-list work">
             <h2>Work</h2>
             <div class="todo-list-items">
-              <input class="checkbox" type="checkbox" id="done" />
-              <label for="done">bake cake</label>
+              <input class="checkbox" type="checkbox" id="done1" />
+              <label for="done1">bake cake</label>
             </div>
           </div>
           <div class="container todo-list school">
             <h2>School</h2>
             <div class="todo-list-items">
-              <input class="checkbox" type="checkbox" id="done" />
-              <label for="done"
+              <input class="checkbox" type="checkbox" id="done2" />
+              <label for="done2"
                 >implement prototypical architectural pattern</label
               >
             </div>
             <div class="todo-list-items">
-              <input class="checkbox" type="checkbox" id="done" />
-              <label for="done">drink punsch afterwards</label>
+              <input class="checkbox" type="checkbox" id="done3" />
+              <label for="done3">drink punsch afterwards</label>
             </div>
           </div>
           <div class="container todo-list personal">
             <h2>Personal</h2>
             <div class="todo-list-items">
-              <input class="checkbox" type="checkbox" id="done" />
-              <label for="done">go to öh punschstandl</label>
+              <input class="checkbox" type="checkbox" id="done4" />
+              <label for="done4">go to öh punschstandl</label>
             </div>
           </div>
         </div>
@@ -58,5 +58,7 @@
         </div>
       </div>
     </div>
+
+    <script src="code.js"></script>
   </body>
 </html>
